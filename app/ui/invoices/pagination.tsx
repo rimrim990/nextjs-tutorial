@@ -63,6 +63,8 @@ function PaginationNumber({
   position?: 'first' | 'last' | 'middle' | 'single';
   isActive: boolean;
 }) {
+
+    // 상황별로 적절한 CSS 적용을 위해 className 토글
   const className = clsx(
     'flex h-10 w-10 items-center justify-center text-sm border',
     {
